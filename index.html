@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./image/iconSorteio.ico" type="image/x-icon">
+    <title>Sorteio</title>
+</head>
+<body>
+    <div id="conteiner">
+        <div id="dvback"></div>
+        <div id="left">
+             <h1 id="titulo">Sorteio</h1>
+             <p id="p1">Adicione os nomes dos participantes que farão parte do sorteio, quando todos estiverem adicionados basta sortear!</p>
+             <div id="erro"></div>
+             <label for="name"></label>
+             <input type="text" id="name" placeholder="Digite um nome...">
+             <button id="incluir">Adicionar</button>
+             <button id="sorteio">Sortear</button><br>
+             
+             <div id="conteinerCheck">
+                <label class="switch">
+                    <span class="switchText">Limpar lista após o sorteio</span>
+                    <div class="switchWraper">
+                     <input type="checkbox" id="check"> 
+                     <span class="switchButton"></span>
+                    </div>
+                 </label> 
+             </div>           
+        </div>
+        <div id="right">
+            <div id="lista">
+                <h2 id="t2">Lista de nomes</h2>
+                <div id="nomes">
+
+                </div>
+            </div>        
+        </div>
+    </div>
+            <div id="sortudoNome">
+                <h4>sorteado foi</h4> 
+                <p id="pSorteado"></p>
+                <button id="ok">OK</button>
+            </div>
+    <footer>&copy;Dev. Mateus Costa</footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

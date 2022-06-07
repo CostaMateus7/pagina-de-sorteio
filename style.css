@@ -1,0 +1,233 @@
+
+*{
+    padding: 0;
+    margin: 0px;
+}
+body{
+    background-color: blueviolet;
+    font: normal 15px arial;
+}
+#conteiner{
+    max-width: 80%;
+    min-height: 90vh;
+    background-color: aliceblue;
+    margin: auto;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0,0, 0, 300);
+}
+
+#left{
+    width: 50%;
+}
+#titulo{
+    padding-top: 40px;
+    text-align: center;
+    margin: 20px;
+    font: normal 50px arial;
+}
+#p1 {
+    text-align: center;
+    font: normal 20px arial;
+    color: blue;
+    padding: 15px;
+    margin: 20px;
+
+}
+#name{
+    padding: 10px;
+    width: 80%;
+    border-radius: 7px;
+    margin: auto;
+}
+button{
+    padding: 10px;
+    font: normal 15px arial;
+    width: 35%;
+    border: none;
+    background-color: blue;
+    color: white;
+    margin-top: 7px;          
+    cursor: pointer;
+    margin-left: 10%;   
+    order: 1;
+}
+button:hover {
+    color: black;
+    transform: scale(1.05);
+}
+
+#lista{
+    width: 40%;
+    background-color: black;
+    position: absolute;  
+    top: 40px;
+    right: 20px;
+    box-sizing: border-box;
+    }
+#t2{
+    color: aliceblue;
+    text-align: center;
+    font: normal 40px arial;
+    padding: 15px;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    font: normal 20px arial;
+    color: aliceblue;
+    margin-top: 15px;   
+    text-align: center;
+}
+#dvback{
+   height: 100%;
+   width: 20%;
+   background-color: blue;
+   float: right;
+   padding: 0;
+   margin: 0;
+}
+#link{
+   text-decoration: none;  
+}
+.switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding-top: 40px;
+}
+.switch .switchWraper{
+    display: inline-block;
+    min-width: 30px;
+    height: 20px;
+    position: relative;
+}
+.switch .switchWraper .switchButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    background-color: blue;
+
+}
+.switch .switchWraper input {
+    display: none;
+}
+.switch .switchText {
+    padding-right: 10px;
+    font: normal 18px arial;
+}
+.switch .switchWraper .switchButton::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    transition: .6s all ease;
+}
+.switch .switchWraper input:checked + .switchButton{
+    background-color: black;
+}
+.conteinerCheck{
+    position: relative;
+}
+.switch .switchWraper input:checked + .switchButton::before{
+    transform: translateX(9px);
+}
+#sortudoNome{
+    border-radius: 5px;
+    position: absolute;
+    min-height: 20vh;
+    min-width: 20%;
+    background-color: blue;
+    padding: 20px;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    font: normal 30px arial;
+    text-align: center;
+    display: none;
+
+}
+#ok{
+    border: solid 1px black;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 15px;
+}
+.pNome{
+    color: aliceblue;
+    font: normal 20px arial;
+    display: inline-block;
+}
+.divNome{
+    display: flex;
+    justify-content: space-between;
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.removeLink{
+    cursor: pointer;
+}
+#erro{
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+}
+@media (max-width:700px) {
+    body{
+        background-color: aliceblue;
+    }
+    #conteiner{
+        width: 100%;
+        background-color: none;
+        position: relative;
+        height: 100%;
+        box-shadow: none;
+               
+    }    
+    #right{
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 0;
+    }
+    #left{
+        width: 100%;
+        margin: auto;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        
+    }
+    #lista{
+    width: 100%;
+    background-color: aliceblue;
+    position: absolute;  
+    top: 0px;
+    right: 0px;
+    margin: auto;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    }
+    #t2{
+        color: black;
+    }
+    .pNome{
+        color: black;
+    }
+    
+   
+}
